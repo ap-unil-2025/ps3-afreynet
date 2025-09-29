@@ -2,7 +2,7 @@
 
 ## Student Information
 Name: Freynet Alan
-Date: 29/09/25
+Date: 29.09.25
 
 ## Assignment Overview
 This assignment covers Git version control basics and Python fundamentals including variables, control flow, functions, and file I/O.
