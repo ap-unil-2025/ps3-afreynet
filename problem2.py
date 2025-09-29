@@ -4,9 +4,7 @@ Convert between Celsius and Fahrenheit temperatures.
 """
 
 def celsius_to_fahrenheit(celsius):
-    F = (celsius * 9/5) + 32
-    return(F)
-
+    """
     Convert Celsius to Fahrenheit.
     Formula: F = (C × 9/5) + 32
 
@@ -18,6 +16,7 @@ def celsius_to_fahrenheit(celsius):
     """
     # TODO: Implement this function
     pass
+
 
 def fahrenheit_to_celsius(fahrenheit):
     """
