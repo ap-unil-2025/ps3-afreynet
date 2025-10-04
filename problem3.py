@@ -24,15 +24,7 @@ def get_numbers_from_user():
         except ValueError:
             print("Merci d'entrer un nombre ou done")
 
-
-        # TODO: Get input from user
-        # TODO: Check if user typed 'done'
-        # TODO: Try to convert to float and add to list
-        # TODO: Handle invalid input gracefully
-        pass
     return(numbers)
-
-print(get_numbers_from_user())
 
 def analyze_numbers(numbers):
     """
@@ -56,7 +48,22 @@ def analyze_numbers(numbers):
 
     analysis = {}
 
-    # TODO: Calculate count
+    analysis["count"] = len(numbers)
+    analysis["summ"] = sum(numbers)
+    analysis["average"] = sum(numbers)/len(numbers)
+    analysis["minimum"] = min(numbers)
+    analysis["maximum"] = max(numbers)
+    even = 0
+    odd = 0
+    for i in range(len(numbers)):
+        if numbers[i] % 2 == 0:
+            even = even + 1 
+        else: 
+            odd = odd + 1
+    analysis["even_count"] = even
+    analysis["odd_count"] = odd
+    
+    # TODO: Calculate count 
     # TODO: Calculate sum
     # TODO: Calculate average
     # TODO: Find minimum
@@ -65,7 +72,6 @@ def analyze_numbers(numbers):
     # TODO: Count odd numbers
 
     return analysis
-
 
 def display_analysis(analysis):
     """
@@ -79,6 +85,14 @@ def display_analysis(analysis):
 
     print("\nAnalysis Results:")
     print("-" * 20)
+
+    print("Count :", analysis["count"])
+    print("Sum :", analysis["summ"])
+    print("Average :", round(analysis["average"],2))
+    print("Minimum :", analysis["minimum"])
+    print("Maximum :", analysis["maximum"])
+    print("Even :", analysis["even_count"])
+    print("Odd :", analysis["odd_count"])
 
     # TODO: Display all analysis results in a nice format
     # Example:
