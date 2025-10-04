@@ -12,16 +12,27 @@ def get_numbers_from_user():
         list: List of numbers entered by user
     """
     numbers = []
-
+    number = 0
     while True:
+        number = (input("nombre"))
+        if number == 'done':
+            break
+        try : 
+            fnumber = float(number)
+            numbers.append(fnumber)
+
+        except ValueError:
+            print("Merci d'entrer un nombre ou done")
+
+
         # TODO: Get input from user
         # TODO: Check if user typed 'done'
         # TODO: Try to convert to float and add to list
         # TODO: Handle invalid input gracefully
         pass
+    return(numbers)
 
-    return numbers
-
+print(get_numbers_from_user())
 
 def analyze_numbers(numbers):
     """
