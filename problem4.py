@@ -35,7 +35,6 @@ def count_words(filename):
         splitted_content = content.split()
         count = len(splitted_content)
         
-        
     return count 
         
     # TODO: Open file and count words
@@ -53,9 +52,14 @@ def count_lines(filename):
     Returns:
         int: Total number of lines
     """
+    with open(filename, 'r') as f:
+        lines = 0
+        for _ in f:
+            lines += 1
+    return lines
+    
     # TODO: Open file and count lines
     pass
-
 
 def count_characters(filename, include_spaces=True):
     """
