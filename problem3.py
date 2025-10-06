@@ -49,10 +49,10 @@ def analyze_numbers(numbers):
     analysis = {}
 
     analysis['count'] = len(numbers)
-    analysis["summ"] = sum(numbers)
-    analysis["average"] = sum(numbers)/len(numbers)
-    analysis["minimum"] = min(numbers)
-    analysis["maximum"] = max(numbers)
+    analysis['sum'] = sum(numbers)
+    analysis['average'] = sum(numbers)/len(numbers)
+    analysis['minimum'] = min(numbers)
+    analysis['maximum'] = max(numbers)
     even = 0
     odd = 0
     for i in range(len(numbers)):
@@ -60,8 +60,8 @@ def analyze_numbers(numbers):
             even = even + 1 
         else: 
             odd = odd + 1
-    analysis["even_count"] = even
-    analysis["odd_count"] = odd
+    analysis['even_count'] = even
+    analysis['odd_count'] = odd
     
     # TODO: Calculate count 
     # TODO: Calculate sum
@@ -86,13 +86,13 @@ def display_analysis(analysis):
     print("\nAnalysis Results:")
     print("-" * 20)
 
-    print("Count :", analysis["count"])
-    print("Sum :", analysis["summ"])
-    print("Average :", round(analysis["average"],2))
-    print("Minimum :", analysis["minimum"])
-    print("Maximum :", analysis["maximum"])
-    print("Even :", analysis["even_count"])
-    print("Odd :", analysis["odd_count"])
+    print("Count :", analysis['count'])
+    print("Sum :", analysis['sum'])
+    print("Average :", round(analysis['average'],2))
+    print("Minimum :", analysis['minimum'])
+    print("Maximum :", analysis['maximum'])
+    print("Even :", analysis['even_count'])
+    print("Odd :", analysis['odd_count'])
 
     # TODO: Display all analysis results in a nice format
     # Example:
