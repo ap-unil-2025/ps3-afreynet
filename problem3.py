@@ -48,7 +48,7 @@ def analyze_numbers(numbers):
 
     analysis = {}
 
-    analysis["count"] = len(numbers)
+    analysis['count'] = len(numbers)
     analysis["summ"] = sum(numbers)
     analysis["average"] = sum(numbers)/len(numbers)
     analysis["minimum"] = min(numbers)
